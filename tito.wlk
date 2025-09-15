@@ -65,6 +65,9 @@ object coctel {
     ingredientes.add(unIngrediente)
   }
   method rendimiento(cantidad) {
+    method rendimiento(cantidad) = ingredientes.fold({1,(rendimientoTotal,i = rendimientoTotal * i.rendimiento(cantidad/ingredientes.size()))})
+    }
     
   }
 }
+
